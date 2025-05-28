@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Curiosidades de Mois</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+    #avatar-display {
+      font-size: 80px;
+      position: relative;
+    }
+    .accessory {
+      position: absolute;
+      font-size: 40px;
+    }
+    .gafas {
+      top: 30px;
+      left: 33%;
+    }
+    .sombrero {
+      top: -10px;
+      left: 35%;
+    }
+    #curiosity-box {
+      margin-top: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #history-list {
+      margin-top: 20px;
+      background: #e8e8e8;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Curiosidades de Mois</h1>
+
+  <div id="avatar-display">🙂</div>
+  <div id="coins">🪙 Monedas: 0</div>
+
+  <button id="change-emoji">Cambiar Emoji</button>
+  <button id="buy-gafas">Comprar Gafas (20)</button>
+  <button id="buy-sombrero">Comprar Sombrero (20)</button>
+
+  <div id="curiosity-box"></div>
+  <div id="category"></div>
+
+  <button id="next-btn">Ver otra curiosidad</button>
+
+  <h2>Historial</h2>
+  <div id="history-list"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
